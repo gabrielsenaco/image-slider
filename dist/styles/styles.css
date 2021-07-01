@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  display: grid;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas: 
+  "prev image next"
+  "sl sl sl";
+}
+
+.control {
+  font-size: 3rem;
+  margin: 1rem;
+  cursor: pointer;
+  color: #003566;
+}
+
+.control:hover {
+  color: #ffc300;
+}
+
+.slider-current-image {
+  grid-area: image;
+}
+
+.slider-current-image {
+  width: 100%;
+  height: auto;
+}
+
+.slider-dot-nav {
+  grid-area: sl;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #001d3d;
+}
+
+.slider-dot-nav i {
+  margin-top: 0.3rem;
+  cursor: pointer;
+  margin: 0 0.2rem;
+}
+
+.slider-dot-nav i:hover {
+color: #ffd60a;
+}
+
+.slider-dot-nav .enabled {
+  color: #ffc300;
+}
